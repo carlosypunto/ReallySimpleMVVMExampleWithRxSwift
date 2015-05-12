@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SimpleMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cl9-iL-uS7">
+                                <rect key="frame" x="16" y="20" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eUC-mQ-sDd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zYj-Mw-9Wx">
+                                <rect key="frame" x="16" y="58" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MYi-aW-ssi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcq-6k-P22">
+                                <rect key="frame" x="16" y="96" width="568" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WkC-aC-b43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zcq-6k-P22" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="QCC-7y-QG2"/>
+                            <constraint firstItem="cl9-iL-uS7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RUk-lG-aZ0"/>
+                            <constraint firstItem="cl9-iL-uS7" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="T7U-Ln-P2c"/>
+                            <constraint firstItem="zYj-Mw-9Wx" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Ubd-DA-Acw"/>
+                            <constraint firstItem="cl9-iL-uS7" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cQ7-ST-BWH"/>
+                            <constraint firstItem="zYj-Mw-9Wx" firstAttribute="top" secondItem="cl9-iL-uS7" secondAttribute="bottom" constant="8" id="onM-8e-gYG"/>
+                            <constraint firstItem="zcq-6k-P22" firstAttribute="top" secondItem="zYj-Mw-9Wx" secondAttribute="bottom" constant="8" id="ruU-TV-ddw"/>
+                            <constraint firstItem="zYj-Mw-9Wx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="tpo-78-gKn"/>
+                            <constraint firstItem="zcq-6k-P22" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vtZ-Jq-ut6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lastnameTextfield" destination="zYj-Mw-9Wx" id="P5E-8v-kb8"/>
+                        <outlet property="nameTextfield" destination="cl9-iL-uS7" id="rfm-zC-Pa5"/>
+                        <outlet property="resultLabel" destination="zcq-6k-P22" id="rs0-Cd-PsZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
