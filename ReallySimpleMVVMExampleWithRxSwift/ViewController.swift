@@ -19,8 +19,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    viewModel = ViewControllerViewModel()
-    viewModel.configure(nameTextfield, lastnameTF: lastnameTextfield)
+    viewModel = ViewControllerViewModel(nameText: nameTextfield.rx_text, lastnameText: lastnameTextfield.rx_text)
     resultLabel.rx_subscribeTextTo(viewModel.result)
   }
 
