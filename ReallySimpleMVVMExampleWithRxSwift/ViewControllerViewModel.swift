@@ -22,6 +22,7 @@ class ViewControllerViewModel {
         self.nameText = nameText
         self.lastnameText = lastnameText
         result = combineLatest(nameText, lastnameText) { (name, lastname) in name + " " + lastname }
+            .shareReplay(1)
     }
     
 }
