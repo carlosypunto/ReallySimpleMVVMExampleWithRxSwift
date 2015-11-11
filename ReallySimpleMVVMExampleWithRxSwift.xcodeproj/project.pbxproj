@@ -14,7 +14,7 @@
 		07E3C2011B01F3C50010338D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07E3C1FF1B01F3C50010338D /* LaunchScreen.xib */; };
 		07E3C20D1B01F3C50010338D /* ReallySimpleMVVMExampleWithRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3C20C1B01F3C50010338D /* ReallySimpleMVVMExampleWithRxSwiftTests.swift */; };
 		07E3C2171B01F5FD0010338D /* ViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3C2161B01F5FD0010338D /* ViewControllerViewModel.swift */; };
-		ECAD574BB73B13CF24525B31 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BDCDB970B4EC27CE93AD4B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ECAD574BB73B13CF24525B31 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BDCDB970B4EC27CE93AD4B /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,7 +194,8 @@
 		07E3C1E91B01F3C50010338D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Carlos García";
 				TargetAttributes = {
 					07E3C1F01B01F3C50010338D = {
@@ -363,6 +364,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -430,6 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReallySimpleMVVMExampleWithRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cgn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReallySimpleMVVMExampleWithRxSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cgn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -459,6 +463,7 @@
 				);
 				INFOPLIST_FILE = ReallySimpleMVVMExampleWithRxSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cgn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReallySimpleMVVMExampleWithRxSwift.app/ReallySimpleMVVMExampleWithRxSwift";
 			};
@@ -474,6 +479,7 @@
 				);
 				INFOPLIST_FILE = ReallySimpleMVVMExampleWithRxSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cgn.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReallySimpleMVVMExampleWithRxSwift.app/ReallySimpleMVVMExampleWithRxSwift";
 			};

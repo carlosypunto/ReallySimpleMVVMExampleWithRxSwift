@@ -16,12 +16,12 @@ class ViewControllerViewModel {
     
     let nameText: StringObservable
     let lastnameText: StringObservable
-    var result: StringObservable!
+    let result: StringObservable!
     
     init(nameText: StringObservable, lastnameText: StringObservable) {
         self.nameText = nameText
         self.lastnameText = lastnameText
-        result = combineLatest(nameText, lastnameText) { (name, lastname) in name + " " + lastname } >- variable
+        result = combineLatest(nameText, lastnameText) { (name, lastname) in name + " " + lastname }
     }
     
 }
