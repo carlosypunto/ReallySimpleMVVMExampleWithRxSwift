@@ -21,7 +21,7 @@ class ViewControllerViewModel {
     init(nameText: StringObservable, lastnameText: StringObservable) {
         self.nameText = nameText
         self.lastnameText = lastnameText
-        result = combineLatest(nameText, lastnameText) { (name, lastname) in name + " " + lastname }
+        result = Observable.combineLatest(nameText, lastnameText) { (name, lastname) in name + " " + lastname }
             .shareReplay(1)
     }
     
